@@ -49,7 +49,7 @@ const Navbar = () => {
     <div className=" mx-3 px-3 pb-3 shadow-md rounded-bl-md rounded-br-md">
       <div className="nav-container flex justify-between py-4 ">
         <Link to="/">
-          <div className="font-bold text-lg">Todo'er</div>
+          <div className="font-black text-lg">Todo'er</div>
         </Link>
         <div className="flex text-sm text-md justify-center items-center font-semibold">
           {!user && (

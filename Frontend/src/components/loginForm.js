@@ -21,7 +21,7 @@ const Login = () => {
         width: "70%",
         padding: "10px",
         fontSize: "14px",
-        margin: "10px 0 auto",
+        margin: "10px auto",
         backgroundColor: "white",
         color: "#00050",
       },
@@ -73,7 +73,7 @@ const Login = () => {
           width: "70%",
           padding: "10px",
           fontSize: "14px",
-          margin: "0 auto",
+          margin: "10px auto",
           backgroundColor: "white",
           color: "#00050",
         },
@@ -91,7 +91,7 @@ const Login = () => {
       <div className="mx-3 my-9 shadow-md p-4 rounded-md">
         <form onSubmit={handleLogin}>
           <div
-            className="form-title font-bold mb-9 bg-red-50 py-4 px-2 rounded-md"
+            className="form-title font-bold mb-9 bg-red-50 py-4 px-4 rounded-md"
             style={{ background: "#dad7cd60" }}
           >
             <span className="pr-3">
@@ -106,7 +106,7 @@ const Login = () => {
             <input
               value={username}
               onChange={(e) => setUser(e.target.value)}
-              className="capitalize w-full h-10 rounded-md p-4 focus:outline-none font-semibold"
+              className="capitalize w-full h-10 rounded-md p-4 focus:outline-none font-bold"
               type="text"
               style={{ background: "#a3b18a" }}
             />
@@ -116,7 +116,7 @@ const Login = () => {
             <input
               value={password}
               onChange={(e) => setPass(e.target.value)}
-              className="w-full h-10 rounded-md p-4 focus:outline-none font-semibold"
+              className="w-full h-10 rounded-md p-4 focus:outline-none font-bold"
               type="password"
               style={{ background: "#a3b18a" }}
             />

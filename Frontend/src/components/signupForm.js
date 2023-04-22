@@ -91,7 +91,7 @@ const SignupForm = () => {
       <div className="mx-3 my-9 shadow-md p-4 rounded-md">
         <form onSubmit={handleSignup}>
           <div
-            className="form-title font-bold mb-9 bg-red-50 px-2 rounded-md py-4 "
+            className="form-title font-bold mb-9 bg-red-50 px-5 rounded-md py-4 "
             style={{ background: "#dad7cd60" }}
           >
             <span className="pr-3">
@@ -104,7 +104,7 @@ const SignupForm = () => {
             <input
               value={username}
               onChange={(e) => setUser(e.target.value)}
-              className="font-semibold capitalize w-full h-10 rounded-md p-4 focus:outline-none"
+              className="font-bold capitalize w-full h-10 rounded-md p-4 focus:outline-none"
               type="text"
               style={{ background: "#a3b18a" }}
             />
@@ -114,7 +114,7 @@ const SignupForm = () => {
             <input
               value={password}
               onChange={(e) => setPass(e.target.value)}
-              className="font-semibold w-full h-10 rounded-md p-4 focus:outline-none"
+              className="font-bold w-full h-10 rounded-md p-4 focus:outline-none"
               type="password"
               style={{ background: "#a3b18a" }}
             />
