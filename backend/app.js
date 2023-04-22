@@ -1,8 +1,14 @@
 const express = require("express");
 require("dotenv").config();
+const cors = require("cors");
 const mongoose = require("mongoose");
 const todoRoute = require("./routes/todoRoute");
 const userRoute = require("./routes/userRoute");
+const corsOptions = {
+  origin: "https://todoapperr.netlify.app",
+};
+
+app.use(cors(corsOptions));
 
 const app = express();
 app.use(express.json());
