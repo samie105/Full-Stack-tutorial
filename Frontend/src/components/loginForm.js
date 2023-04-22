@@ -21,7 +21,7 @@ const Login = () => {
         width: "70%",
         padding: "10px",
         fontSize: "14px",
-        margin: "10px auto",
+        margin: "0px auto",
         backgroundColor: "white",
         color: "#00050",
       },
