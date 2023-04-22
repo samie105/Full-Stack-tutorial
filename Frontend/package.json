@@ -1,8 +1,7 @@
 {
-  "proxy": "http://127.0.0.1:4000",
   "name": "react-tutorial",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
     "@fortawesome/free-solid-svg-icons": "^6.3.0",
