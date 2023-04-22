@@ -4,11 +4,6 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const todoRoute = require("./routes/todoRoute");
 const userRoute = require("./routes/userRoute");
-const corsOptions = {
-  origin: "https://todoapperr.netlify.app",
-};
-
-app.use(cors(corsOptions));
 
 const app = express();
 app.use(express.json());
@@ -21,6 +16,11 @@ app.use(function (req, res, next) {
   );
   next();
 });
+const corsOptions = {
+  origin: "https://todoapperr.netlify.app",
+};
+
+app.use(cors(corsOptions));
 app.use("/api/todos", todoRoute);
 app.use("/api/users", userRoute);
 
