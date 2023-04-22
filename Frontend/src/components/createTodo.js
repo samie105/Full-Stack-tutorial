@@ -35,7 +35,7 @@ const CreateNew = () => {
     console.log(user.token);
     const tdc = { name, complete };
     const response = await fetch(
-      "https://todo-app-pu0f.onrender.com/api/todos/",
+      "https://todo-app-pu0f.onrender.com/api/todos",
       {
         method: "POST",
         body: JSON.stringify(tdc),
@@ -60,7 +60,7 @@ const CreateNew = () => {
           width: "70%",
           padding: "10px",
           fontSize: "14px",
-          margin: "0 auto",
+          margin: "10px 0px auto",
           backgroundColor: "white",
           color: "#00050",
         },
