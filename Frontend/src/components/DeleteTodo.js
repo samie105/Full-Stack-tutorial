@@ -27,12 +27,15 @@ function DeleteTodo({ todo }) {
       },
     });
     console.log(todo._id);
-    const response = await fetch("/api/todos/" + todo._id, {
-      method: "DELETE",
-      headers: {
-        Authorization: `Bearer ${user.token}`,
-      },
-    });
+    const response = await fetch(
+      "https://todo-app-pu0f.onrender.com/api/todos/" + todo._id,
+      {
+        method: "DELETE",
+        headers: {
+          Authorization: `Bearer ${user.token}`,
+        },
+      }
+    );
     const json = await response.json();
     if (!response.ok) {
       toast.update(id, {

@@ -28,13 +28,16 @@ const SignupForm = () => {
     });
 
     e.preventDefault();
-    const response = await fetch("/api/users/signup", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ username, password }),
-    });
+    const response = await fetch(
+      "https://todo-app-pu0f.onrender.com/api/users/signup",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ username, password }),
+      }
+    );
     const json = await response.json();
     if (!response.ok) {
       toast.update(id, {

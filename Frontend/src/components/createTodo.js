@@ -34,14 +34,17 @@ const CreateNew = () => {
     });
     console.log(user.token);
     const tdc = { name, complete };
-    const response = await fetch("/api/todos/", {
-      method: "POST",
-      body: JSON.stringify(tdc),
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${user.token}`,
-      },
-    });
+    const response = await fetch(
+      "https://todo-app-pu0f.onrender.com/api/todos/",
+      {
+        method: "POST",
+        body: JSON.stringify(tdc),
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${user.token}`,
+        },
+      }
+    );
     const json = await response.json();
     setIsLoading(false);
     if (!response.ok) {

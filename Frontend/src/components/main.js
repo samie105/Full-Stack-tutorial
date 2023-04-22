@@ -11,11 +11,14 @@ const Bodymain = ({ toast }) => {
 
   useEffect(() => {
     const fetchtodos = async () => {
-      const response = await fetch("/api/todos/", {
-        headers: {
-          Authorization: "Bearer " + user.token,
-        },
-      });
+      const response = await fetch(
+        "https://todo-app-pu0f.onrender.com/api/todos/",
+        {
+          headers: {
+            Authorization: "Bearer " + user.token,
+          },
+        }
+      );
       const json = await response.json();
 
       if (response.ok) dispatch({ type: "SET_TODOS", payload: json });
