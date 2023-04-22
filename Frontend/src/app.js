@@ -7,7 +7,7 @@ import Login from "./components/loginForm";
 import SignupForm from "./components/signupForm";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { AuthContext } from "./contexts/userContext";
 import { AnimatePresence, motion } from "framer-motion";
 
