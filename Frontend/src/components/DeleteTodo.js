@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { AuthContext } from "../contexts/userContext";
 import { todosContext } from "../contexts/todosContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faListCheck } from "@fortawesome/free-solid-svg-icons";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { toast } from "react-toastify";
 
 function DeleteTodo({ todo }) {
@@ -83,7 +83,7 @@ function DeleteTodo({ todo }) {
   };
   return (
     <button onClick={handleDelete} className="deletebtn text-white">
-      <FontAwesomeIcon style={{ color: "#588157" }} icon={faListCheck} />
+      <FontAwesomeIcon style={{ color: "#588157" }} icon={faTrash} />
     </button>
   );
 }
