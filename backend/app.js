@@ -9,6 +9,7 @@ const app = express();
 app.use(express.json());
 const corsOptions = {
   origin: "https://todoapperr.netlify.app",
+  origin: "http://localhost:3000",
 };
 
 app.use(cors(corsOptions));
@@ -18,8 +19,8 @@ app.use("/api/users", userRoute);
 mongoose
   .connect(process.env.CONNECTION_STRING)
   .then(() => {
-    app.listen(process.env.PORT, () => {
-      console.log("listening on port", process.env.PORT, " & connected to db");
+    app.listen(4000, () => {
+      console.log("listening on port", 4000, " & connected to db");
     });
   })
   .catch((error) => console.log(error));
